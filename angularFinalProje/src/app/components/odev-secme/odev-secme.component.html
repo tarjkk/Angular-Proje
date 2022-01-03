@@ -1,0 +1,111 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="m-auto text-center mb-4">Ders Adları</h3>
+      <table class="table table-hover">
+        <thead class="table-secondary">
+          <th>Id</th>
+          <th>Ders Adı</th>
+        </thead>
+        <tbody>
+          <tr
+            class="table table-light table-bordered"
+            *ngFor="let ders of dersler"
+          >
+            <td>{{ ders.dersId }}</td>
+            <td>{{ ders.dersAdi }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="m-auto text-center mb-4">Ödevler Adları</h3>
+      <table class="table table-hover">
+        <thead class="table-secondary">
+          <th>Ders Adı</th>
+          <th>Ödev Adı</th>
+        </thead>
+        <tbody>
+          <tr
+            class="table table-light table-bordered"
+            *ngFor="let odev of odevler"
+          >
+            <td>{{ odev.odevKatAdi }}</td>
+            <td>{{ odev.odevAdi }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <h4 class="m-auto text-center mb-4 mt-4">Ödev Seçimi</h4>
+      <form #frm="ngForm" (submit)="Kaydet()">
+        <div class="form-group mt-4">
+          <label class="fs-4">Ders Adı</label>
+          <input
+            type="text"
+            class="form-control"
+            name="adsoyad"
+            [(ngModel)]="secKayit.odevKatAdi"
+            required
+          />
+          <hr />
+          <input
+            type="hidden"
+            class="form-control"
+            name="key"
+            [(ngModel)]="secKayit.key"
+          />
+        </div>
+        <div class="form-group mt-4">
+          <label class="fs-4">Ödev Adı</label>
+          <input
+            type="text"
+            class="form-control"
+            name="odevadi"
+            [(ngModel)]="secKayit.odevAdi"
+            required
+          />
+          <hr />
+        </div>
+        <div class="form-group mt-4">
+          <label class="fs-4">Öğrenci No</label>
+          <input
+            type="text"
+            class="form-control"
+            name="ogrno"
+            [(ngModel)]="secKayit.odevOgrNo"
+            required
+          />
+          <hr />
+        </div>
+        <div class="form-group mt-4">
+          <label class="fs-4">Ödev Açıklaması</label>
+          <input
+            type="text"
+            class="form-control"
+            name="odevaciklama"
+            [(ngModel)]="secKayit.odevAciklama"
+            required
+          />
+          <hr />
+        </div>
+        <div class="form-group">
+          <input
+            type="submit"
+            value="Kaydet"
+            class="btn btn-block btn-outline-success"
+            [disabled]="frm.invalid"
+          />
+        </div>
+      </form>
+      <button class="btn btn-block btn-outline-danger mb-3" (click)="Vazgec()">
+        Temizle
+      </button>
+      <div
+        [ngClass]="sonuc.islem ? 'alert alert-success' : 'alert alert-danger'"
+        *ngIf="sonuc.mesaj?.length"
+      >
+        {{ sonuc.mesaj }}
+      </div>
+    </div>
+  </div>
+</div>

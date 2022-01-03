@@ -1,0 +1,261 @@
+{
+
+  "uye": [
+    {
+    "mail":"tarjkk@mail.com",
+    "admin":1,
+    "parola": "123"
+  },
+  {
+    "mail":"tarjkk2@mail.com",
+    "admin":0,
+    "parola": "123"
+  }
+],
+
+
+
+  "kayit": [
+    {
+      "odevId": "1",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129001", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "2",
+      "odevAdi": "Ödev Dağıtım Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129002", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "3",
+      "odevAdi": "Eğitim Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129003", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "4",
+      "odevAdi": "Anket Hazırlama Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129004", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "5",
+      "odevAdi": "Soru - Cevap Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129005", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "6",
+      "odevAdi": "Araç Kiralama Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129006", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "7",
+      "odevAdi": "Dosya Yönetim Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129007", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "8",
+      "odevAdi": "Haber Portalı Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129008", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "9",
+      "odevAdi": "Emlak Portalı Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129009", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "10",
+      "odevAdi":  "Html ve Css (ders2)",
+      "odevKatId": "2",
+      "odevKatAdi":  "Web Tasarımının Temelleri",
+      "odevOgrNo":"20201129010", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "11",
+      "odevAdi": "JavaScript (ders2)",
+      "odevKatId": "2",
+      "odevKatAdi":  "Web Tasarımının Temelleri",
+      "odevOgrNo":"20201129011", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "12",
+      "odevAdi": "Wordpress (ders2)",
+      "odevKatId": "2",
+      "odevKatAdi":  "Web Tasarımının Temelleri",
+      "odevOgrNo":"20201129012", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "13",
+      "odevAdi": "İnstagram Postu Hazırlama (ders3)",
+      "odevKatId": "3",
+      "odevKatAdi": "Sistem Analizi Ve Tasarımı",
+      "odevOgrNo":"20201129013", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "14",
+      "odevAdi": "Hastane Reklam Postu Hazırlama (ders3)",
+      "odevKatId": "3",
+      "odevKatAdi": "Sistem Analizi Ve Tasarımı",
+      "odevOgrNo":"20201129014", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "15",
+      "odevAdi": "Teknoloji İle İlgili Post Hazırlama (ders3)",
+      "odevKatId": "3",
+      "odevKatAdi":"Sistem Analizi Ve Tasarımı",
+      "odevOgrNo":"20201129015", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "16",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129016", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "17",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129017", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "18",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129018", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "19",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129019", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "20",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129020", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "21",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129021", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "22",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129022", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "23",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129023", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "24",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129024", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "25",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129025", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "26",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129025", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "27",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129025", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "28",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129025", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "29",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129025", 
+      "odevAciklama":"Açıklama giriniz."
+    },
+    {
+      "odevId": "30",
+      "odevAdi": "Online Sınav Portalı (ders1)",
+      "odevKatId": "1",
+      "odevKatAdi": "İnternet Programcılığı",
+      "odevOgrNo":"20201129025", 
+      "odevAciklama":"Açıklama giriniz."
+    }
+  ]
+}
+

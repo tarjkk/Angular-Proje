@@ -1,0 +1,142 @@
+<div class="container mt-3 text-center">
+  <div class="row">
+    <div class="col-md-12 mb-3 text-right">
+      Merhaba, <b>{{ adsoyad }}</b>
+    </div>
+    <div>
+      <button
+        class="btn btn-outline-danger"
+        style="float: right"
+        (click)="OturumuKapat()"
+        *ngIf="fbServis.OturumKontrol()"
+      >
+        Oturum Kapat
+      </button>
+      <button
+        class="btn btn-outline-info mr-3"
+        style="float: right"
+        (click)="ekleduzenle = true"
+      >
+        Kayıt Ekle/Düzenle
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container mt-3 text-center">
+  <div class="row" *ngIf="ekleduzenle">
+    <div class="col-md-6 m-auto">
+      <h4 class="text-danger alert alert-secondary">Kayıt Ekle/Düzenle</h4>
+      <form #frm="ngForm" (submit)="Kaydet()">
+        <div class="form-group">
+          <label class="fs-4">Ders Adı</label>
+          <input
+            type="text"
+            class="form-control"
+            name="adsoyad"
+            [(ngModel)]="secKayit.odevKatAdi"
+          />
+          <input
+            type="hidden"
+            class="form-control"
+            name="key"
+            [(ngModel)]="secKayit.key"
+          />
+        </div>
+        <div class="form-group">
+          <label class="fs-4">Ödev Adı</label>
+          <input
+            type="text"
+            class="form-control"
+            name="odevadi"
+            [(ngModel)]="secKayit.odevAdi"
+          />
+        </div>
+        <div class="form-group">
+          <label class="fs-4">Öğrenci No</label>
+          <input
+            type="text"
+            class="form-control"
+            name="ogrno"
+            [(ngModel)]="secKayit.odevOgrNo"
+          />
+        </div>
+        <div class="form-group">
+          <label class="fs-4">Ödev Açıklaması</label>
+          <input
+            type="text"
+            class="form-control"
+            name="odevaciklama"
+            [(ngModel)]="secKayit.odevAciklama"
+          />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Kaydet" class="btn btn-outline-success" />
+          <button
+            class="btn btn-outline-danger ml-3"
+            (click)="ekleduzenle = false"
+          >
+            Kapat
+          </button>
+        </div>
+      </form>
+      <div
+        [ngClass]="sonuc.islem ? 'alert alert-success' : 'alert alert-danger'"
+        *ngIf="sonuc.mesaj?.length"
+      >
+        {{ sonuc.mesaj }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="m-auto text-center mb-4">Tüm Kayıt Listesi</h2>
+      <input
+        type="text"
+        class="form-control mt-3 mb-2"
+        placeholder="Aranacak değer giriniz."
+      />
+    </div>
+    <table class="table table-bordered table-hover mt-3">
+      <thead class="table-secondary">
+        <th>Ders Adı</th>
+        <th>Odev Adı</th>
+        <th>Öğrenci No</th>
+        <th>Ödev Açıklama</th>
+        <th>Düzenle</th>
+        <th>Sil</th>
+      </thead>
+      <tbody>
+        <tr
+          class="table table-light table-bordered"
+          *ngFor="let kayit of kayitlar"
+        >
+          <td>{{ kayit.odevKatAdi }}</td>
+          <td>{{ kayit.odevAdi }}</td>
+          <td>{{ kayit.odevOgrNo }}</td>
+          <td>{{ kayit.odevAciklama }}</td>
+          <td>
+            <button class="btn btn-warning" (click)="KayitDuzenle(kayit)">
+              Düzenle
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-danger" (click)="KayitSil(kayit)">
+              Sil
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      [ngClass]="sonuc.islem ? 'alert alert-success' : 'alert alert-danger'"
+      *ngIf="sonuc.mesaj?.length"
+    >
+      {{ sonuc.mesaj }}
+    </div>
+    <button class="btn btn-danger w-25">Önceki Sayfa</button>
+    <button class="btn btn-success ml-3 w-25">Sonraki Sayfa</button>
+  </div>
+</div>

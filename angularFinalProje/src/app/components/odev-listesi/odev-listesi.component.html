@@ -1,0 +1,44 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <h3 class="m-auto text-center mb-4">Dersler</h3>
+      <table class="table table-hover">
+        <thead class="table-secondary">
+          <th>Id</th>
+          <th>Ders Adı</th>
+        </thead>
+        <tbody>
+          <tr
+            class="table table-light table-bordered"
+            *ngFor="let ders of dersler"
+          >
+            <td>{{ ders.dersId }}</td>
+            <td>{{ ders.dersAdi }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-8">
+      <h3 class="m-auto text-center mb-4">Ödevler Listesi</h3>
+      <table class="table table-hover">
+        <thead class="table-secondary">
+          <th>Ders Adı</th>
+          <th>Ödev Adı</th>
+          <th>Öğrenci No</th>
+          <th>Ödev Açıklaması</th>
+        </thead>
+        <tbody>
+          <tr
+            class="table table-light table-bordered"
+            *ngFor="let kayit of kayitlar"
+          >
+            <td>{{ kayit.odevKatAdi }}</td>
+            <td>{{ kayit.odevAdi }}</td>
+            <td>{{ kayit.odevOgrNo }}</td>
+            <td>{{ kayit.odevAciklama }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
